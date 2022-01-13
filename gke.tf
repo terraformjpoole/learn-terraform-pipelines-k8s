@@ -1,8 +1,3 @@
-data "google_compute_zones" "available" {}
-
-output "result_list" {
-  value = "${data.google_compute_zones.available.names}"
-}
 
 resource "google_container_cluster" "engineering" {
   name     = var.cluster_name
