@@ -18,7 +18,7 @@ required_version = ">= 1.1.0"
 
 
 provider "google" {
-  credentials = file(var.gcp_credentials)
+  credentials = var.gcp_credentials
   project = var.google_project
   region  = var.region
 }
