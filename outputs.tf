@@ -35,5 +35,4 @@ output "project_id" {
 }
 
 output "region" {
-  value = data.google_compute_zones.available.region
-}
+  value = "us-central1-a"
