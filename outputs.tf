@@ -36,3 +36,4 @@ output "project_id" {
 
 output "region" {
   value = "us-central1-a"
+}
