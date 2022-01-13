@@ -18,12 +18,7 @@ required_version = ">= 1.1.0"
 
 
 provider "google" {
+  credentials = file(var.gcp_credentials)
   project = var.google_project
   region  = var.region
-}
-
-data "google_compute_zones" "available" {}
-
-output "result_list" {
-  value = "${data.google_compute_zones.available.names}"
 }
